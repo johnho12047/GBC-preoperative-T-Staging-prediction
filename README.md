@@ -1,7 +1,7 @@
 # **GBC preoperative T-Staging prediction v1.0- User Manual**
 
 Thank you for using the GBC preoperative T-Staging prediction v1.0! 
-This application is based on a multimodal fusion model (FWM) that integrates clinical features, radiomics, 
+This application uses a multimodal fusion model (wGBCT) that integrates clinical features, radiomics, 
 and deep learning characteristics to provide preoperative staging predictions.
 Below is a detailed user manual to help you maximize the potential of this tool.
 
@@ -15,7 +15,7 @@ with patients' clinical baseline data. The outputs include stage classification 
 and corresponding probabilities, providing valuable guidance for surgical planning.
 
 > **Note**:
-> Feature extraction involves heavy computation, especially for deep learning models. The time required to process data depends on the number of patients uploaded. If your system does not have CUDA support (GPU acceleration), the process will take longer. Even if the program appears unresponsive, it is still running in the background. Please be patient during this phase.
+> Feature extraction involves heavy computation, especially for deep learning models. The time required to process data depends on the number of patients uploaded. The process will take longer if your system does not have CUDA support (GPU acceleration). Even if the program appears unresponsive, it still runs in the background. Please be patient during this phase.
 
 ---
 
@@ -44,7 +44,7 @@ To ensure the program operates optimally and meets its intended purpose, please 
 
 ## **Usage Instructions**
 
-### 1. application Dependencies
+### 1. Application Dependencies
 - All sub-files within the application folder are essential for its operation. Please avoid deleting or moving any files.
 - Pay special attention to the files in the "data" folder. Missing any of these files might lead to application failure.
 
@@ -85,8 +85,8 @@ For each patient, clinical baseline data must be manually entered in sequence. F
 
 ### 5. Results Storage
 - After prediction, results will be saved automatically in an Excel file in the application's subdirectory:
-  - If you click the “**continues**” button: The results will be stored under `\Prediction result x\Postpredict-Final predicted probabilityinal_weighted_prediction.xlsx`, and the next round of predictions will begin automatically.
-  - If you click the “**close**” button: The results will be stored under `\The last Prediction result\Postpredict-Final predicted probabilityinal_weighted_prediction.xlsx`, and the application will terminate.
+  - If you click the “**continues**” button: The results will be stored under `\Prediction result x\Postpredict-Final predicted probability\final_weighted_prediction.xlsx`, and the next round of predictions will begin automatically.
+  - If you click the “**close**” button: The results will be stored under `\The last Prediction result\Postpredict-Final predicted probability\final_weighted_prediction.xlsx`, and the application will terminate.
 
 > **Note**:  
 > In Prediction result x, the x represents a number that increments with each prediction round.
@@ -105,7 +105,7 @@ For each patient, clinical baseline data must be manually entered in sequence. F
 
 ## **Important Notes**
 
-- This application is suitable for GBC patients with complete preoperative image and clinical data.
+- This application is suitable for GBC patients with complete preoperative images and clinical data.
 - If issues arise during operation, verify the completeness and accuracy of uploaded files and input data.
 - **Results are for reference only**: The predictions are intended as an auxiliary tool. Final clinical decisions should consider all dimensions of patient information.
 
