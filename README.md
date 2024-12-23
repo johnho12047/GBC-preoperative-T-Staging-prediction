@@ -53,10 +53,10 @@ Before uploading patient image data for prediction:
 - Ensure that arterial-phase (AP) and portal venous-phase (PVP) CECT images for GBC patients have undergone ROI segmentation.
 - Both images and their corresponding masks should be saved in NIFTI format, with matching sequence numbers.
 - **File naming format example**:
-  - Arterial phase image: `AP-image8`
-  - Arterial phase mask: `AP-mask8`
-  - Portal venous phase image: `PVP-image8`
-  - Portal venous phase mask: `PVP-mask8`
+  - Arterial phase image: `APimage8`
+  - Arterial phase mask: `APmask8`
+  - Portal venous phase image: `PVPimage8`
+  - Portal venous phase mask: `PVPmask8`
 
 > **Note**:  
 > ROI segmentation can be performed using open-source tools like [3D Slicer](https://www.slicer.org/) or [ITK-SNAP](http://www.itksnap.org/).  
